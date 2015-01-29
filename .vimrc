@@ -22,6 +22,9 @@ Plugin 'mustache/vim-mustache-handlebars'
 " molokai color scheme
 Plugin 'tomasr/molokai'
 
+" gruvbox color scheme
+Plugin 'morhetz/gruvbox'
+
 " CtrlP
 Plugin 'kien/ctrlp.vim'
 
@@ -40,7 +43,7 @@ filetype plugin indent on
 
 " enable highlighting and set the colorscheme
 syntax on
-colorscheme molokai
+colorscheme gruvbox
 
 " make swapfiles in a dedicated directory (don't interfere with my
 " sourcecode!)
