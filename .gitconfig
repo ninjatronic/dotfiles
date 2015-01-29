@@ -1,0 +1,31 @@
+# my identity
+[user]
+	name = Pete Martin
+	email = petemartin@ninjatronic.com
+
+# basic stuff
+[core]
+	excludesfile = /Users/pete/.gitignore_global
+	editor = /usr/bin/vim
+
+# use ssl
+[url "https://"]
+	insteadOf = git://
+
+# push the current branch by default
+[push]
+	default = matching
+
+# i don't know what this does :/
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+# a nice graph to look at
+[alias]
+  tree = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+
+# use the osx keychain to get keys
+[credential]
+	helper = osxkeychain
+
